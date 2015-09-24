@@ -7,15 +7,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Icon="Home" Label="Home" Click="AppBarButton_Click" />
+        </AppBar>
+    </Page.TopAppBar>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.9*"/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
+        
+        <GridView/>
 
-        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            **Clear All Orders**
-        </TextBlock>
+        <Button Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            Clear All Orders
+        </Button>
 
     </Grid>
 </Page>

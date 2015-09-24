@@ -26,13 +26,13 @@
             Internal Test Version
         </TextBlock>
 
-        <TextBlock Grid.Row="2" VerticalAlignment="Center"  HorizontalAlignment="Center">
-            **Go to Orders View**
-        </TextBlock>
+        <Button Grid.Row="2" x:Name="ToOrdersButton" VerticalAlignment="Center"  HorizontalAlignment="Center" Click="ToOrdersButton_Click" >
+            Go to Orders View
+        </Button>
 
-        <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"  HorizontalAlignment="Center">
-            **Submit Order**
-        </TextBlock>
+        <Button Grid.Row="2" x:Name="ToSubmitButton" Grid.Column="1" VerticalAlignment="Center"  HorizontalAlignment="Center" Click="ToSubmitButton_Click">
+            Submit Order
+        </Button>
 
     </Grid>
 </Page>
